@@ -5,16 +5,8 @@ import NewGoal from "./components/NewGoal/NewGoal";
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
     {
-      id: "cg1",
-      text: "Finish the course",
-    },
-    {
-      id: "cg2",
-      text: "Learn all about the course main topic",
-    },
-    {
-      id: "cg3",
-      text: "Help Other Students using F&Q section",
+      id: 'exampleGoal',
+      text: "This is an example Goal."
     }
   ]);
 
@@ -26,6 +18,7 @@ const App = () => {
   return (
     <div>
       <h2>Course Goals</h2>
+      <h5>Add Your Own Goals using the text field below.</h5>
       <NewGoal onAddGoal = {addNewGoalHandler}/>
       <HeadingComp goals = {courseGoals} />
     </div>
